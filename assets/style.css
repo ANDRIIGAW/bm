@@ -9,8 +9,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
 body {
-     background-color: rgb(157, 185, 228);
-     /* background-image: url('./img/img_4.jpg'); */
+    /* background-color: rgba(55, 140, 232, 0.345); */
+    background-image: url('./img/img9_fon.jpg');
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,6 +19,7 @@ body {
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
 }
 
 .nav_top {
@@ -59,24 +60,28 @@ footer {
 }
 
 .text1 {
+    padding: 10px;
     font-size: 6.5rem;
     color: #1a64ed;
     font-weight: 800;
 }
 
 .carousel {
-    margin: 0 5em;
+    margin: 0 2em;
 }
 
 .img_2 {
     width: 25em;
     height: 25em;
-    margin: 0 2%;
+    margin: 0 5em;
+    padding: 20px;
 }
 
 .img_3 {
     width: 25em;
     height: 25em;
+    margin: 0 5em;
+    padding: 20px;
 }
 
 h2 {
@@ -139,26 +144,28 @@ span {
 
     .parent1 {
         height: auto;
-        display:flex;
+        margin: 20px;
         border: 2px solid black;
         padding: 20px;
+        display:flex;
         justify-content: space-between;
         flex-direction: column-reverse;
-        align-items: flex-end;
+        align-items: flex;
     }
 
 
     .parent2 {
         height: auto;
-        width: auto;
+        /* width: auto; */
         left: 0;
+        margin: 20px;
         right: auto;
         background-position: center;
         border: 2px solid black;
         display:flex;
         justify-content: space-between;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex;
     }
 
 }
