@@ -145,7 +145,7 @@ span {
     .parent1 {
         height: auto;
         margin: 20px;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         padding: 20px;
         display:flex;
         justify-content: space-between;
@@ -161,7 +161,7 @@ span {
         margin: 20px;
         right: auto;
         background-position: center;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         display:flex;
         justify-content: space-between;
         flex-direction: column;
