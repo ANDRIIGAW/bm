@@ -15,16 +15,22 @@ body {
 }
 
 .container_nav {
+    position: sticky;
+    top: 0px;
+}
+
+.container {
     max-width: 1200;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+    padding: 0 15px;
 }
 
-.nav_top {
-    position: sticky;
-    top: 0px;
+main {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer {
@@ -36,9 +42,9 @@ footer {
 
 .parent1 {
     margin-top: 2%;
-    padding: 10px;
+    /* padding: 10px; */
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
    
 }
@@ -47,16 +53,9 @@ footer {
     margin-top: 2%;
     padding: 10px;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
    
-}
-
-.child {
-    display: flex;
-    font-size: 60px;
-    text-align: center;
-    align-items: center;
 }
 
 .text1 {
@@ -71,17 +70,17 @@ footer {
 }
 
 .img_2 {
-    width: 25em;
-    height: 25em;
+    width: 20em;
+    height: 20em;
     margin: 0 5em;
     padding: 20px;
 }
 
 .img_3 {
-    width: 25em;
-    height: 25em;
-    margin: 0 5em;
-    padding: 20px;
+    width: 20em;
+    height: 20em;
+    margin: auto;
+    padding: 5px;
 }
 
 h2 {
@@ -98,12 +97,10 @@ main {
 }
 
 li {
-    /* background-color: tomato; */
-    /* color: white; */
-    /* border: 2px solid black; */
+
     margin: 10px;
     text-indent:0%;
-    /* padding: 10px; */
+    padding: 10px;
 }
 
 p {
@@ -122,50 +119,71 @@ span {
     border-radius: 50%;
 }
 
+.btn {
+    padding: 15px 25px;
+    border: 2px solidv #7e99ec;
+    border-radius: 30px;
+    background-color: transparent;
 
+    font-weight: 600;
+    font-style: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+
+    color: #7e99ec;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in; 
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #7e99ec;
+}
 
 /* this is a mobile view */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .logo {
         display: none;
     }
 
-    .site-header {
-        justify-content: flex-end;
-        flex-direction: column;
-    }
-
-    .menu-list {
-        display: none;
-        justify-content: flex;
-        flex-direction: column;
-    }
 
     .parent1 {
-        height: auto;
-        margin: 20px;
-        /* border: 2px solid black; */
-        padding: 20px;
         display:flex;
-        justify-content: space-between;
+        justify-self: center;
         flex-direction: column-reverse;
-        align-items: flex;
     }
 
 
     .parent2 {
-        height: auto;
-        /* width: auto; */
-        left: 0;
-        margin: 20px;
-        right: auto;
-        background-position: center;
-        /* border: 2px solid black; */
+        margin:auto;
         display:flex;
-        justify-content: space-between;
+        justify-self: center;
         flex-direction: column;
-        align-items: flex;
+        align-items:normal;
+    }
+
+    .img_3 {
+        width: 15em;
+        height: 15em;
+
+    }
+
+    span {
+        font-size:x-large;
+    }
+
+    .text1 {
+        font-size:x-large;
+    }
+
+    h2 {
+        font-size:x-large;
+    }
+
+    .carousel {
+        margin: 0 1em;
     }
 
 }
